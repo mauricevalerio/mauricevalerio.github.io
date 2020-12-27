@@ -22,18 +22,13 @@ h2[class$="-header"] {
     top: 0;
 }
 
-/* Menu Bar Sub Container */
-.navbar-subcontainer {
-    margin: 0 14px;
-    padding: 0 15px;
+/* Navigation Bar */
+.navbar-menu {
     display: flex;
-    justify-content: space-between;
-    background-color: #343a40;
+    justify-content: center;
 }
 
-/* Navigation Bar */
-.navbar-subcontainer .navbar-menu a,
-.navbar-subcontainer .social-media a{
+.navbar-menu a {
     margin: 0 16px 0 0;
     padding: 5px 0;
     font-size: 1.2em;
@@ -43,29 +38,12 @@ h2[class$="-header"] {
 }
 
 /* Navigation Menu Effects */
-.navbar-subcontainer .navbar-menu a:hover {
+.navbar-menu a:hover {
     text-decoration: underline;
     text-shadow: 0.25px 0.25px #fff;
 }
 
-/* Social Media Effects */
-a .fa-facebook,
-a .fa-instagram,
-a .fa-linkedin-in {
-    transition: 0.25s;
-}
 
-a .fa-facebook:hover {
-    color: #3b5998;
-}
-
-a .fa-instagram:hover {
-    color: #C13584;
-}
-
-a .fa-linkedin-in:hover {
-    color: #0e76a8;
-}
 
 /****** BANNER INTRODUCTION ******/
 
@@ -189,9 +167,38 @@ a .fa-linkedin-in:hover {
     padding: 15px;
 }
 
-#div-contacts {
+#div-contacts, #div-credits {
     margin-bottom: 25px;
 }
+
+/* Social Media */
+
+#div-contacts > a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+a .fa-facebook,
+a .fa-instagram,
+a .fa-linkedin-in {
+    transition: 0.25s;
+}
+
+a .fa-facebook:hover {
+    color: #3b5998;
+}
+
+a .fa-instagram:hover {
+    color: #C13584;
+}
+
+a .fa-linkedin-in:hover {
+    color: #0e76a8;
+}
+
+/* Credits */
 
 #author-name, .credits {
     display: block;
@@ -206,6 +213,15 @@ a .fa-linkedin-in:hover {
 footer .credits a:hover {
     text-decoration: underline;
     text-shadow: 0.5px 0.5px #fff;
+}
+
+/* Quote */
+#quote figcaption {
+    color: #6c757d;
+}
+
+#quote figcaption::before {
+    content: "\02014";
 }
 
 /****** Responsive Web Design ******/
