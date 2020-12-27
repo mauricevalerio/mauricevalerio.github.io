@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Sub headers format */
+h2[class$="-header"] {
+    font-weight: 700;
+    opacity: 1;
+    margin-bottom: 1em;
+    color: #b5838d;
+    text-transform: uppercase;
+}
+
+/****** Menu Bar Container ******/
+.navbar {
+    padding: 8px 16px;
+    background-color: #343a40;
+    position: sticky;
+    top: 0;
+}
+
+/* Menu Bar Sub Container */
+.navbar-subcontainer {
+    margin: 0 14px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #343a40;
+}
+
+/* Navigation Bar */
+.navbar-subcontainer .navbar-menu a,
+.navbar-subcontainer .social-media a{
+    margin: 0 16px 0 0;
+    padding: 5px 0;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.25s;
+}
+
+/* Navigation Menu Effects */
+.navbar-subcontainer .navbar-menu a:hover {
+    text-decoration: underline;
+    text-shadow: 0.25px 0.25px #fff;
+}
+
+/* Social Media Effects */
+a .fa-facebook,
+a .fa-instagram,
+a .fa-linkedin-in {
+    transition: 0.25s;
+}
+
+a .fa-facebook:hover {
+    color: #3b5998;
+}
+
+a .fa-instagram:hover {
+    color: #C13584;
+}
+
+a .fa-linkedin-in:hover {
+    color: #0e76a8;
+}
+
+/****** BANNER INTRODUCTION ******/
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: center/cover url("imgs/banner-large.jpg");
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+/* Name Introduction */
+#banner > h1 {
+    font-weight: 700;
+    opacity: 1;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* Full Stack Web Developer Text */
+#banner h1 > span {
+    color: #2a9d8f;
+}
+
+#banner > h1:hover {
+    transform: translateY(30px) scale(1.2);
+    text-shadow: 1.6px 1.6px #2a9d8f;
+}
+
+/****** Achievements ******/
+
+/* Experience Container */
+.work-exp {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e1e5f2;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* OCA Section Effects */
+#exp-2 h3 i {
+    color: black;
+    transition: 0.25s;
+}
+
+#exp-2 h3 i:hover {
+    color: green;
+    transform: translateY(-2px);
+} 
+
+/* Logos, Title, Description */
+.exp figure {
+    margin: 1em;
+} 
+
+.exp figure > i {
+    font-size: 4em;
+}
+
+.exp h3, .exp p {
+    margin: 20px 0 10px;
+}
+
+.exp p > abbr {
+    text-decoration: underline;
+}
+
+/* Tools */
+#tools {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: center/cover url("imgs/tools-bg.jpg");
+    background-attachment: fixed;
+    min-height: 100vh;
+    text-align: center;
+    
+}
+
+#tools .tools-header {
+    color: #e9c46a;
+}
+
+#tools-list {
+    margin-top: 50px;
+    font-weight: 400;
+}
+
+#tools-list td {
+    color: #e76f51;
+    transition: 0.5s;
+}
+
+#tools-list td:hover {
+    transform: scale(1.3);
+}
+
+.tbl-bg-text {
+    font-size: 2.5em;
+}
+
+.tbl-md-text {
+    font-size: 2em;
+}
+
+.tbl-sm-text {
+    font-size: 1.5em;
+}
+
+/*****FOOTER******/
+
+#contact-credits {
+    background-color: #343a40;
+    text-align: center;
+    padding: 15px;
+}
+
+#div-contacts {
+    margin-bottom: 25px;
+}
+
+#author-name, .credits {
+    display: block;
+    color: white;
+}
+
+.credits a {
+    text-decoration: none;
+    color: orange;
+}
+
+footer .credits a:hover {
+    text-decoration: underline;
+    text-shadow: 0.5px 0.5px #fff;
+}
+
+/****** Responsive Web Design ******/
+
+@media (min-width: 796px ) {
+    .work-exp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .exp-header {
+        min-width: 100%;
+    }
+    .exp {
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 796px) {
+    #tools-list, #tools-list tr {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
